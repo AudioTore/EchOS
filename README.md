@@ -5,8 +5,16 @@
 
 
 
+VERSION
 
-█░█ █▀▀ █▀█ █▀ █ █▀█ █▄░█
-▀▄▀ ██▄ █▀▄ ▄█ █ █▄█ █░▀█
+EchOS 1.0
 
-Currently in 1.0
+
+About
+
+EtchOS Is an Dos operating System written in C# With the help of Cosmos!
+
+How to install:
+
+Sadly It is unable to boot on real hardware and will need vmware or a virtual machine for this to work. Sadly the creator doesn't seem to care about the
+broken iso builder as it seems to be broken for a couple years now.
