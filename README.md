@@ -1,7 +1,8 @@
 # EchOS
 
+![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
-![image](https://user-images.githubusercontent.com/95601200/181767648-48a6c801-3e42-4d1e-be15-747ce2a67916.png)
+
 
 
 
