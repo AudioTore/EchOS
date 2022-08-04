@@ -8,7 +8,7 @@
 
 VERSION
 
-EchOS 1.0
+EchOS 2.0
 
 
 About
