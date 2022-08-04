@@ -22,6 +22,10 @@ Sadly It is unable to boot on real hardware and will need vmware or a virtual ma
 The best way to install EchOS would be a virtual machine anyway since their is not a resson to install it on real hardware.
 
 
+License:
+Licensed under the MIT License.
+
+
 CREDITS:
 
 I don't need to give credit but I would feel gulity if it I didn't.
