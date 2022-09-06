@@ -25,6 +25,10 @@ The best way to install EchOS would be a virtual machine anyway since their is n
 License:
 Licensed under the MIT License.
 
+FAQ
+Great news! You can find a list of questions and answers at this repos:
+https://github.com/AudioTore/Q-AEch
+
 
 CREDITS:
 
