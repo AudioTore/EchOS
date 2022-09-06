@@ -35,3 +35,6 @@ CREDITS:
 I don't need to give credit but I would feel gulity if it I didn't.
 Very big thank you to Cosmos OS: https://github.com/CosmosOS/Cosmos
 This project wouldn't be possible without!
+
+Also big thanks to Richard5656 Go check him out!
+He helped with bugs and implementing features :)
