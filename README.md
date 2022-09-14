@@ -30,6 +30,13 @@ Great news! You can find a list of questions and answers at this repos:
 https://github.com/AudioTore/Q-AEch
 
 
+READ THIS (9/14/2022):
+I renumbered the version. Its now echos 1.0, 1.1, 1.2, etc
+I decided to renumber the versions because it wouldn't make sense if it went
+1.0 2.0 3.0 you know. The latest version right now is 1.2
+
+
+
 CREDITS:
 
 I don't need to give credit but I would feel gulity if it I didn't.
