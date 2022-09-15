@@ -8,7 +8,7 @@
 
 VERSION
 
-EchOS 3.0
+EchOS 1.2
 
 
 About
@@ -20,6 +20,16 @@ How to install:
 Sadly It is unable to boot on real hardware and will need vmware or a virtual machine for this to work.
 
 The best way to install EchOS would be a virtual machine anyway since their is not a resson to install it on real hardware.
+
+
+Message of the day:
+[
+  Hello guys! I'm proud to announce that this project is actually coming togeather. we are working towards a fully function operating system.
+  It isn't going to be the next linux or windows however. We are adding a lot of features and more features are to come in later updates.
+  Please feel free to use the issuses tab to find any bugs. However also feel to suggest some features it makes the project better.
+  Anyways the 1.3 update is actually going pretty fast. Just gotta work on a couple things and I can release it by next month hopefully by day 1.
+]
+
 
 
 License:
