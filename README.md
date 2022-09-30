@@ -22,12 +22,12 @@ Sadly It is unable to boot on real hardware and will need vmware or a virtual ma
 The best way to install EchOS would be a virtual machine anyway since their is not a resson to install it on real hardware.
 
 
-Message of the day:
+Message of the day: (9/30/2022)
 [
-  Hello guys! I'm proud to announce that this project is actually coming togeather. we are working towards a fully function operating system.
-  It isn't going to be the next linux or windows however. We are adding a lot of features and more features are to come in later updates.
-  Please feel free to use the issuses tab to find any bugs. However also feel to suggest some features it makes the project better.
-  Anyways the 1.3 update is actually going pretty fast. Just gotta work on a couple things and I can release it by next month hopefully by day 1.
+  Hello everyone! The update is right at the next corner. I just wanna say Thank you @Richard5656 for helping and contributing to EchOS.
+  Right now I am planning to make EchOS a big dos operating system. Originally I was gonna put a gui but I did notice that most dos operating systems can't do much
+  other than open programs using a good old fashion floppy disk or something like that. I want this dos operating system to be packed with stuff. I want a Dos           operating system that has a lot of features that other Dos operating systems dont So I made EchOS to fix that problem.
+  EchOS was made as a hobby project but also to take a whole new spin on Dos operating systems. I am working on EchOS and I'm planning on adding features and bug fixes   to make EchOS better each time. :)
 ]
 
 
