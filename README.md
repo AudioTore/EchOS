@@ -22,13 +22,14 @@ Sadly It is unable to boot on real hardware and will need vmware or a virtual ma
 The best way to install EchOS would be a virtual machine anyway since their is not a resson to install it on real hardware.
 
 
-Message of the day: (9/30/2022)
+Message of the day: (11/24/2022)
 [
-  Morning! EchOS 1.3 is finally now out. This OS really is coming together its starting to do most
-  things a regular OS can do. It can calculate numbers it has a partially working file system.
-  Oh and it can write and read text on files :) I recommend you go check out the new update.
-  It's been difficult developing all these new features recently but it was worth it for the new update.
-  Anyways cya!
+  Happy thanksgiving everyone! Gobble gobble! I'm already 90% done with the port from Cosmos. I just wanna say
+  I hope you all had great turkey and gravy :) and I just wanna also say thank you @Richard5656 for helping me develop.
+  He's now pretty much a developer/constributer for helping me make the port. some of the code is Richard's.
+  I'm so sorry for the slow updates I promise its coming soon! My data on which it may come is december 13. Again
+  I'm not 100% sure. It may come eariler or later.. But if I do get it done earlier I will put a estimate release date. :)
+  I hope you guys all have a great day! Go enjoy your thanksgiving :D!!
 ]
 
 
