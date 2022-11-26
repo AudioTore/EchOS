@@ -3,13 +3,14 @@
 ![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
 
-
-
-
-VERSION
-
-EchOS 1.3
-
+Message of the day: (11/25/2022)
+[
+  Hello everyone! EchOS is now licensed under the GNU public license v2. Meaning users can now look at the source code and redistrubute it.
+  The software is also free (as it always has.) Development so far is going okay. I have a confident feeling we may be able to release this earlier
+  but I'm not getting my hopes to high. EchOS once again thank you to all the developers that have helped me with this project. (There are only 2 devs me and richard)
+  if you want to constribute please please feel free to do so! Code suggestions really improve not just the code but with bugs and the operating system itself.
+  anyways you guys all have a good day!
+]
 
 About
 
@@ -22,20 +23,12 @@ Sadly It is unable to boot on real hardware and will need vmware or a virtual ma
 The best way to install EchOS would be a virtual machine anyway since their is not a resson to install it on real hardware.
 
 
-Message of the day: (11/24/2022)
-[
-  Happy thanksgiving everyone! Gobble gobble! I'm already 90% done with the port from Cosmos. I just wanna say
-  I hope you all had great turkey and gravy :) and I just wanna also say thank you @Richard5656 for helping me develop.
-  He's now pretty much a developer/constributer for helping me make the port. some of the code is Richard's.
-  I'm so sorry for the slow updates I promise its coming soon! My data on which it may come is december 13. Again
-  I'm not 100% sure. It may come eariler or later.. But if I do get it done earlier I will put a estimate release date. :)
-  I hope you guys all have a great day! Go enjoy your thanksgiving :D!!
-]
 
-
+VERSION:
+EchOS 1.3
 
 License:
-Licensed under the MIT License.
+GNU GENERAL PUBLIC LICENSE v2
 
 FAQ
 Great news! You can find a list of questions and answers at this repos:
