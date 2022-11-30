@@ -3,13 +3,14 @@
 ![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
 
-Message of the day: (11/25/2022)
+Message of the day: (11/29/2022)
 [
-  Hello everyone! EchOS is now licensed under the GNU public license v2. Meaning users can now look at the source code and redistrubute it.
-  The software is also free (as it always has.) Development so far is going okay. I have a confident feeling we may be able to release this earlier
-  but I'm not getting my hopes to high. EchOS once again thank you to all the developers that have helped me with this project. (There are only 2 devs me and richard)
-  if you want to constribute please please feel free to do so! Code suggestions really improve not just the code but with bugs and the operating system itself.
-  anyways you guys all have a good day!
+ Hey guy! (Only some of you can get the reference..) I been doing good. Once again the new update is almost on its way.
+ First I just wanna say I have updated the FaQ!! With new random questions! So yea go check it out.
+ Also EchOS is almost here I promise! However once I post the new update it sadly may be a bit of a downgrade compare to
+ the last update. Thats because that is going to be a kind of test build. EchOS 1.4 may have less features. This is because
+ sense we are working from scratch I will be have to do EVERYTHING myself. Including make my OWN file system that isn't cosmos.
+ However most of the commands should be there! Have a nice day!
 ]
 
 About
@@ -32,7 +33,7 @@ GNU GENERAL PUBLIC LICENSE v2
 
 FAQ
 Great news! You can find a list of questions and answers at this repos:
-https://github.com/AudioTore/Q-AEch
+[](https://github.com/audiotore482/Q-AEch)](https://github.com/audiotore482/Q-AEch)
 
 
 
