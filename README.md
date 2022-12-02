@@ -5,12 +5,9 @@
 
 Message of the day: (11/29/2022)
 [
- Hey guy! (Only some of you can get the reference..) I been doing good. Once again the new update is almost on its way.
- First I just wanna say I have updated the FaQ!! With new random questions! So yea go check it out.
- Also EchOS is almost here I promise! However once I post the new update it sadly may be a bit of a downgrade compare to
- the last update. Thats because that is going to be a kind of test build. EchOS 1.4 may have less features. This is because
- sense we are working from scratch I will be have to do EVERYTHING myself. Including make my OWN file system that isn't cosmos.
- However most of the commands should be there! Have a nice day!
+ Umm what? It's december already? Well then Santa is waiting for you!. Again the date the EchOS 1.4 update release date is december of 13. Again it can be delayed
+ if it needs to so no promise that it will come out on exactly december of 13. Anyways yeah not much to say here. I guess
+ Merry early christmas!
 ]
 
 About
