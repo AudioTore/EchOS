@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
 
-Message of the day: (11/29/2022)
+Message of the day: (12/2/2022)
 [
  Umm what? It's december already? Well then Santa is waiting for you!. Again the date the EchOS 1.4 update release date is december of 13. Again it can be delayed
  if it needs to so no promise that it will come out on exactly december of 13. Anyways yeah not much to say here. I guess
