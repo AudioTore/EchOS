@@ -4,7 +4,7 @@
 
 
 - Message of the day: (12/12/2022)
-[
+
  Oh sorry! I forgot one thing :) I miss the simplicty of using basic C# then typing in 0xb8000 = "3948bb94" which
  doesn't even make sense.. C# was super easy to use with OS development.. Sooo Because of stopping the development
  of Assembly and C++ port. Sadly It became a little too diffcult to say I always had to relay on other people
@@ -12,7 +12,7 @@
  C# to continue development. I will have richard developing the java compiler because we will use Java instead of Cosmos
  while at the sametime having the same simplicty of regular source code. I will be using Cosmos in the meantime while
  he works on it because I am behind on updates! Take care :)
-]
+
 
 About
 
