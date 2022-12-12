@@ -5,12 +5,13 @@
 
 Message of the day: (12/12/2022)
 [
-  Hey everyone! I have some bad news :( EchOS is going to have to be delayed. The good news is the scratch version
-  of EchOS should fix most of Cosmos issues. We had problems with the "Waiting for debugging connection" when down-
-  loading the iso and loading it up in a vm. It seems like Cosmos either way just wasn't truthworthy for reliable 
-  Downloads. This new EchOS version should fix that problem up. And hopefully with a little bit of C and assembly
-  we can get this thing running on almost any hardware. At least on any virtual machine platform.. Anyways thats
-  all I wanted to tell you! carry on with your day.
+ Oh sorry! I forgot one thing :) I miss the simplicty of using basic C# then typing in 0xb8000 = "3948bb94" which
+ doesn't even make sense.. C# was super easy to use with OS development.. Sooo Because of stopping the development
+ of Assembly and C++ port. Sadly It became a little too diffcult to say I always had to relay on other people
+ to fix my problems and I really don't like that.. It was so much easier with Cosmos. However. We will not be using
+ C# to continue development. I will have richard developing the java compiler because we will use Java instead of Cosmos
+ while at the sametime having the same simplicty of regular source code. I will be using Cosmos in the meantime while
+ he works on it because I am behind on updates! Take care :)
 ]
 
 About
