@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
 
-Message of the day: (12/12/2022)
+- Message of the day: (12/12/2022)
 [
  Oh sorry! I forgot one thing :) I miss the simplicty of using basic C# then typing in 0xb8000 = "3948bb94" which
  doesn't even make sense.. C# was super easy to use with OS development.. Sooo Because of stopping the development
