@@ -3,11 +3,14 @@
 ![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
 
-Message of the day: (12/2/2022)
+Message of the day: (12/12/2022)
 [
- Umm what? It's december already? Well then Santa is waiting for you!. Again the date the EchOS 1.4 update release date is december of 13. Again it can be delayed
- if it needs to so no promise that it will come out on exactly december of 13. Anyways yeah not much to say here. I guess
- Merry early christmas!
+  Hey everyone! I have some bad news :( EchOS is going to have to be delayed. The good news is the scratch version
+  of EchOS should fix most of Cosmos issues. We had problems with the "Waiting for debugging connection" when down-
+  loading the iso and loading it up in a vm. It seems like Cosmos either way just wasn't truthworthy for reliable 
+  Downloads. This new EchOS version should fix that problem up. And hopefully with a little bit of C and assembly
+  we can get this thing running on almost any hardware. At least on any virtual machine platform.. Anyways thats
+  all I wanted to tell you! carry on with your day.
 ]
 
 About
