@@ -5,16 +5,15 @@
 
 - Message of the day: (12/12/2022)
 
- Oh sorry! I forgot one thing :) I miss the simplicty of using basic C# then typing in 0xb8000 = "3948bb94" which
- doesn't even make sense.. C# was super easy to use with OS development.. Sooo Because of stopping the development
- of Assembly and C++ port. Sadly It became a little too diffcult to say I always had to relay on other people
- to fix my problems and I really don't like that.. It was so much easier with Cosmos. However. We will not be using
- C# to continue development. I will have richard developing the java compiler because we will use Java instead of Cosmos
- while at the sametime having the same simplicty of regular source code. I will be using Cosmos in the meantime while
- he works on it because I am behind on updates! Take care :)
+Hello everyone! New update I know its been a while since I made a new update.
+I finally got done with implementing the hardest part of the OS. The filesystem..
+I will be posting another big update on christmas its gonna have 8 new updates
+and changes when it comes out! Please now is the time for you to share some
+suggestions in the issues tab so I can get a bunch of update ideas :)
+Cya!
 
 
-About
+- About
 
 EtchOS Is an Dos operating System written in C# With the help of Cosmos!
 
@@ -26,10 +25,10 @@ The best way to install EchOS would be a virtual machine anyway since their is n
 
 
 
-VERSION:
+- VERSION:
 EchOS 1.3
 
-License:
+- License:
 GNU GENERAL PUBLIC LICENSE v2
 
 FAQ
@@ -40,7 +39,7 @@ Great news! You can find a list of questions and answers at this repos:
 
 
 
-CREDITS:
+- CREDITS:
 
 I don't need to give credit but I would feel gulity if it I didn't.
 Very big thank you to Cosmos OS: https://github.com/CosmosOS/Cosmos
