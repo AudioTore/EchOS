@@ -1,7 +1,10 @@
-using Sys = Cosmos.System;
+﻿using Sys = Cosmos.System;
 using System;
 using System.Threading;
+using EchOS;
+
 using Cosmos.System.FileSystem.VFS;
+using Cosmos.System.FileSystem;
 
 /* Where all the commands and their functionality go. You can make a command by making a function in this Class.
  * Then call the function from this class using the kernel class. I think you can figure it out if your a 
@@ -13,16 +16,21 @@ using Cosmos.System.FileSystem.VFS;
 public class Cmdman
 {
 
-    Sys.FileSystem.CosmosVFS fs = new Sys.FileSystem.CosmosVFS();
 
     public static void Help()
     {
 
         Console.WriteLine("Note: Every command ends with a '();' ");
-
+        Console.WriteLine("");
         Console.WriteLine("================================================================================");
         Console.WriteLine("Command List: ");
-        Console.WriteLine("Disk.GetInformation(); - tells you the free space of the drive.");
+        Console.WriteLine("Disk.GetInformation(); - Tells you information of the current drive");
+        Console.WriteLine("Disk.ListDir(); - List all the files in the 0:\\ directory");
+        Console.WriteLine("File.create [file] - Creates a File. Takes two or more arguments.");
+        Console.WriteLine("File.delete [file] - Deletes a File. Takes two or more arguments.");
+        Console.WriteLine("File.read [file] - Reads and prints the contents of a text file. Takes two or more arguments.");
+        Console.WriteLine("Directory.create [directory] - Creates a directory. Takes two or more arguments.");
+        Console.WriteLine("Directory.delete [directory] - Deletes a directory. Takes two or more arguments.");
         Console.WriteLine("Open.TextPad(); - Allows you to type text and save it.");
         Console.WriteLine("Open.Tour - Take a tour and teaches you about how to use EchOS!");
         Console.WriteLine("System.Shutdown(); - Shuts the OS Down. (Please use this)");
@@ -30,7 +38,7 @@ public class Cmdman
         Console.WriteLine("Open.Calculator(); - Opens the systems calculator.");
         Console.WriteLine("BackgroundColor.Change(); - Changes the terminals background color.");
         Console.WriteLine("System.About(); - Tells more information about the OS");
-        Console.WriteLine("Console.Clear(); - Clears the console.");
+        Console.WriteLine("CMD.Clear(); - Clears the console.");
         Console.WriteLine("================================================================================");
 
     }
@@ -263,8 +271,8 @@ public class Cmdman
     {
 
         Console.WriteLine("System OS: EchOS");
-        Console.WriteLine("Version: 1.3");
-        Console.WriteLine("Release date: [october 1, 2022]");
+        Console.WriteLine("Version: 1.4");
+        Console.WriteLine("Release date: [December 14, 2022]");
         Console.WriteLine("Language written in: C#");
         Console.WriteLine("Developer: audioTore (Github)");
 
@@ -278,7 +286,7 @@ public class Cmdman
         Console.Clear();
         Console.WriteLine("===========================================");
         Console.WriteLine("||########################################||");
-        Console.WriteLine("||               EchOS 1.3                ||");
+        Console.WriteLine("||               EchOS 1.4                ||");
         Console.WriteLine("||########################################||");
         Console.WriteLine("===========================================");
         Console.WriteLine("Type 'Help();' to get a list of commands.");
@@ -385,19 +393,98 @@ public class Cmdman
 
     }
 
-
+   
     public static void DiskGetInformation()
     {
-        // Gets all drive information.
-        var available_space = VFSManager.GetAvailableFreeSpace(@"0:\");
-        var getfstype = VFSManager.GetFileSystemType(@"0:\");
+        try // Gets all drive information.
+        {
 
-        Console.WriteLine(@"Disk Drive: 0:\");
-        Console.WriteLine("Disk space: " + available_space);
-        Console.WriteLine("Disk Type: " + getfstype);
+            var fs = new Sys.FileSystem.CosmosVFS();
 
-        // Space.
-        Console.WriteLine("");
+            var available_space = VFSManager.GetAvailableFreeSpace(@"0:\");
+            var getfstype = VFSManager.GetFileSystemType(@"0:\");
+            
+
+            Console.WriteLine(@"Disk Drive: 0:\");
+            Console.WriteLine("Disk space: " + available_space);
+            Console.WriteLine("Disk Type: " + getfstype);
+
+            // Space.
+            Console.WriteLine("");
+
+        }
+        catch (Exception e)
+        {
+
+            Console.WriteLine(e.Message);
+            Console.ReadKey();
+
+        }       
+
+    }
+
+    public static void RedScreenOfDeath()
+    {
+
+        Console.Clear();
+
+        if (Cosmos.System.VMTools.IsVirtualBox)
+        {
+
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.Clear();
+
+            while (true)
+            {
+
+                Console.Beep();
+
+                Console.WriteLine("ERROR RSOD: DEVICE NOT COMPATIBLE.");
+                Console.WriteLine("VIRTUALBOX IS NOT COMPATIBLE WITH");
+                Console.WriteLine("ECHOS TRY AGAIN WITH VMWARE");
+
+                Console.WriteLine("");
+
+                Thread.Sleep(4000);
+                Console.Clear();
+
+            }
+
+        }
+
+        else if (Cosmos.System.VMTools.IsQEMU)
+        {
+
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.Clear();
+
+            while (true)
+            {
+
+                
+
+                Console.Beep();
+
+                Console.WriteLine("ERROR RSOD: DEVICE NOT COMPATIBLE.");
+                Console.WriteLine("QEMU IS NOT COMPATIBLE WITH");
+                Console.WriteLine("ECHOS TRY AGAIN WITH VMWARE");
+
+                Console.WriteLine("");
+
+                Thread.Sleep(4000);
+                Console.Clear();
+
+            }
+
+        }
+
+        else
+        { 
+        
+            // Do nothing and continue.
+
+        }
+        
 
     }
 
