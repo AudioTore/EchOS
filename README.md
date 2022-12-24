@@ -26,7 +26,7 @@ The best way to install EchOS would be a virtual machine anyway since their is n
 
 
 - VERSION:
-EchOS 1.3
+EchOS 1.4
 
 - License:
 GNU GENERAL PUBLIC LICENSE v2
