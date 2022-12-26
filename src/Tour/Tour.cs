@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Source code owned by: audiotore341
+// 2022 License: GNU GENERAL PUBLIC LICENSE v2
+
+using System;
 using System.IO;
 
 namespace EchOS
@@ -95,7 +98,7 @@ namespace EchOS
 
             Console.WriteLine("One more command that may come into use is the \"Open.TextPad();\" command.");
             Console.WriteLine("The textpad can allow you create textfiles and enter text into it. It also allows you ");
-            
+
             // Spaces.
             Console.WriteLine("");
 
@@ -120,14 +123,18 @@ namespace EchOS
 
                 // [
                 try
-                    {
-                        File.Create(@"0:\" + input);
-                    }
+                {
 
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e.Message);
-                    }
+                    File.Create(@"0:\" + input);
+
+                }
+
+                catch (Exception e)
+                {
+
+                    Console.WriteLine(e.Message);
+
+                }
                 // ]
 
                 Console.Clear();
@@ -148,28 +155,28 @@ namespace EchOS
 
                 // [
                 try
-                    {
-                    
-                        // This will make sure whenever the user enters a new line of text it skips to the next line.
-                        File.AppendAllText(@"0:\" + answer, type_input.ToString() + Environment.NewLine);
+                {
 
-                    }
+                    // This will make sure whenever the user enters a new line of text it skips to the next line.
+                    File.AppendAllText(@"0:\" + answer, type_input.ToString() + Environment.NewLine);
 
-                    catch (Exception e)
-                    {
+                }
 
-                        Console.WriteLine(e.Message);
+                catch (Exception e)
+                {
 
-                    }
+                    Console.WriteLine(e.Message);
+
+                }
                 // ]
 
                 if (type_input == "exit")
                 {
 
                     break;
-                
+
                 }
-            
+
             }
 
             Console.Clear();
@@ -235,7 +242,7 @@ namespace EchOS
                 }
 
             }
-            
+
 
         }
 

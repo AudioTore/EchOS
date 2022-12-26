@@ -1,7 +1,14 @@
-﻿using System.Threading;
-using Sys = Cosmos.System;
-using System;
+﻿// Source code owned by: audiotore341
+// 2022 License: GNU GENERAL PUBLIC LICENSE v2
+
+using Cosmos.Debug.Kernel;
+using Cosmos.HAL.BlockDevice;
+using Cosmos.System.FileSystem;
 using Cosmos.System.FileSystem.VFS;
+using NUnit.Framework;
+using System;
+using System.Threading;
+using Sys = Cosmos.System;
 
 /* 
 * EchOS 2022 This is the base of the operating system
@@ -18,11 +25,9 @@ using Cosmos.System.FileSystem.VFS;
 namespace EchOS
 {
 
-
     public class Kernel : Cosmos.System.Kernel
     {
 
-        
 
         // Variables to pass to fileSystem class.
         public static string filemake;
@@ -33,11 +38,17 @@ namespace EchOS
 
         public static string fileread;
 
+        public static string orlovread;
+
+        private static Disk ourDisk;
+        private ManagedPartition ourPart;
         protected override void BeforeRun()
         {
 
             var fs = new Sys.FileSystem.CosmosVFS();
             VFSManager.RegisterVFS(fs);
+
+           
 
             Cmdman.RedScreenOfDeath();
 
@@ -46,7 +57,6 @@ namespace EchOS
             Console.WriteLine("Kernel loaded..");
             Thread.Sleep(1000);
             Console.Clear();
-
 
 
 
@@ -67,48 +77,64 @@ namespace EchOS
             }
 
             // Ascii Logo.
-            Console.WriteLine(@"
+            Console.WriteLine(@"                                                                                                                     
+                       :^:                        
+                       ^?^                        
+                       ^P:                        
+                      ^GB5:                       
+                     ~BBGP5^                      
+                    .YBGGPGJ.                     
+                    7GGPGGPP!                     
+                   ^5BGGGGPGY:                    
+                   ?BGGGGGGGP7
+                 .7G#BGPGGGGGP7.
+                 ^YGG#BBBBBBGGY^
+                 .:^YY7PB57YJ^:.                  
+                   .:.:::::::.
 
-					:~7Y5PPPP5YJ?!^.                          
-				:75GBBBBBBBGGGPP55J7^.				    ^7777777777~
-			:JG#BBB###BBBBBBBBBG5YY?~.				    P@@@@@@@@@@5   
-			!G#BB##BBBBBBBBGGGGBBBG5JJ7:			    #@@&5YYYYY5~   
-			7B#B##BBBBBBBBBBBBBGGGGG#P???:			    @@@5           
-			~BBB##BBBB#BPY?77?YPBBGGGG#P??7.		    7@@@J.:::::.    
-			YBBB#BBBB#GY!.    :!JBBPPGG#J??^		    5@@@@@@@@@@Y    
-			5BGB#BBGB#P?.      :7P#GPGG#Y??~		    B@@&BBBBBBB!    
-			JGGG#BBBB#GJ!.    .~JBBPGGG#J??^ :		    @@@P            
-			^PGPB#BBGGBB5J7!!7J5BBPPGG#P??7.		    7@@@?            
-			!PPPB#BGGGGBBBBBBBBGPPGG#P???:			    5@@@7:::::^.     
-			~YP5PBBBGGGGGGGPPPGGBBGY??7:			    #@@@@@@@@@@?     
-			.7YYY5PGBBBGGGBBBGG5J??7^:G     
-				.~7?JJJYYY55YYJJ??7!:                        
-					.:~!!777777!~^:.    
-
-
-			");
+                    Merry christmas!
+            ");
 
             Console.Beep();
             Thread.Sleep(2000);
             Console.Clear();
 
-            Console.WriteLine("===========================================");
-            Console.WriteLine("||########################################||");
-            Console.WriteLine("||               EchOS 1.4                ||");
-            Console.WriteLine("||########################################||");
-            Console.WriteLine("===========================================");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("===============================================================================");
+            Console.WriteLine("||###########################################################################||");
+            Console.WriteLine("||                                 EchOS 1.5                                 ||");
+            Console.WriteLine("||###########################################################################||");
+            Console.WriteLine("===============================================================================");
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Type \"Help();\" to get a list of commands.");
             Console.WriteLine("Or type \"Open.Tour();\" to take a tour to learn how to use EchOS.");
+            Console.WriteLine();
 
-            
 
+            // var disks = VFSManager.GetDisks();
         }
 
         protected override void Run() // While loop by default.
         {
 
+            // Keep here
+
+            // Titlebar.DrawBar();
+            // Colorhandle.settings();
+            // Cmdman.Clear_Src();
+
+               Titlebar.DrawBar();
+               Colorhandle.settings();
+
+            Cmdman.Clear_Src();
+            Console.WriteLine("Ho Ho Ho! Merry christmas! :)");
+
             while (true)
             {
+
+
+                      Titlebar.DrawBar();
+                      Colorhandle.settings();
 
                 Console.Write(@"[0:\]: ");
                 string input_cmd = Console.ReadLine();
@@ -132,7 +158,7 @@ namespace EchOS
                         break;
 
                     case "BackgroundColor.Change();":
-                        Cmdman.BackgroundColor_Change();
+                        Terminalbackground.Checkcolor();
                         break;
 
                     case "Open.Calculator();":
@@ -163,6 +189,14 @@ namespace EchOS
                         Console.WriteLine("1");
                         break;
 
+                    case "Execute.Ticktacktoe();":
+                        Cmdman.starttic();
+                        break;
+
+                    case "Orlov ":
+                        Console.WriteLine("1");
+                        break;
+
                     default:
                         Console.WriteLine("'" + input_cmd + "' Is not a vaild command.");
                         Console.WriteLine("NOTE: Every command has a capital at the beginning and a '();' at the end.");
@@ -190,7 +224,7 @@ namespace EchOS
                         Filesystem.Filemake();
 
                     }
-                    
+
                 }
 
 
@@ -219,7 +253,7 @@ namespace EchOS
 
                 if (input_cmd.StartsWith("Directory.create "))
                 {
-                    
+
                     if (!input_cmd.Contains("();"))
                     {
 
@@ -283,6 +317,27 @@ namespace EchOS
 
                 }
 
+                if (input_cmd.StartsWith("Orlov "))
+                {
+
+                    if (input_cmd.Contains("();"))
+                    {
+
+                        string toremove = input_cmd.Replace("();", "");
+                        string parse = toremove.Remove(0, 6);
+                        orlovread = parse.ToString();
+                        Orlov.start();
+
+                    }
+
+                    else
+                    {
+
+                        Console.WriteLine("Missing a \"();\"");
+
+                    }
+                        
+                }
 
 
                 // If input has no characters.

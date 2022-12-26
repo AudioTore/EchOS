@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Source code owned by: audiotore341
+// 2022 License: GNU GENERAL PUBLIC LICENSE v2
+
+using System;
 using System.Threading;
 
 namespace EchOS
@@ -15,6 +18,7 @@ namespace EchOS
         private static Double a1;
 
         private static Double answer;
+
         public static void calculator()
         {
 

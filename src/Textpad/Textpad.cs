@@ -1,186 +1,189 @@
-using Cosmos.System.FileSystem.VFS;
+﻿// Source code owned by: audiotore341
+// 2022 License: GNU GENERAL PUBLIC LICENSE v2
+
 using System;
 using System.IO;
+
 using Sys = Cosmos.System;
 public class Textpad
 {
 
-	Sys.FileSystem.CosmosVFS fs = new Sys.FileSystem.CosmosVFS();
 
-	public static void textpad()
-	{
 
-		Sys.FileSystem.CosmosVFS fs = new Sys.FileSystem.CosmosVFS();
+    public static void textpad()
+    {
 
-		bool bflag = true;
 
 
-		do
-		{
+        bool bflag = true;
 
-			Console.WriteLine("You are about to open up Textpad?");
-			Console.WriteLine("[1] Create a file.");
-			Console.WriteLine("[2] Show contents of text files.");
-			Console.WriteLine("[3] Exit.");
-			Console.Write(">>>: ");
-			string input = Console.ReadLine();
 
-			switch (input)
-			{
+        do
+        {
 
-				case "1":
-					Console.Clear();
-					textpad2();
-					break;
+            Console.WriteLine("You are about to open up Textpad?");
+            Console.WriteLine("[1] Create a file.");
+            Console.WriteLine("[2] Show contents of text files.");
+            Console.WriteLine("[3] Exit.");
+            Console.Write(">>>: ");
+            string input = Console.ReadLine();
 
-				case "2":
-					Console.Clear();
-					textpad3();
-					break;
+            switch (input)
+            {
 
-				case "3":
-					Cmdman.Clear_Src();
-					bflag = false;
-					break; // Return to the kernel.
+                case "1":
+                    Console.Clear();
+                    textpad2();
+                    break;
 
-				default:
-					Console.WriteLine("Invaild command..");
-					break;
+                case "2":
+                    Console.Clear();
+                    textpad3();
+                    break;
 
-			}
+                case "3":
+                    Cmdman.Clear_Src();
+                    bflag = false;
+                    break; // Return to the kernel.
 
-		} while (bflag);
+                default:
+                    Console.WriteLine("Invaild command..");
+                    break;
 
+            }
 
-		// Help break out of the program.
-		do
-		{
+        } while (bflag);
 
-			break;
 
-		} while (!bflag);
+        // Help break out of the program.
+        do
+        {
 
-	}
+            break;
 
-	public static void textpad2()
-	{
+        } while (!bflag);
 
-		Sys.FileSystem.CosmosVFS fs = new Sys.FileSystem.CosmosVFS();
+    }
 
-		bool boflag = true;
+    public static void textpad2()
+    {
 
-		while (boflag)
-		{
+        Sys.FileSystem.CosmosVFS fs = new Sys.FileSystem.CosmosVFS();
 
-			Console.WriteLine("Type a filename. (It should be ending in a .txt)");
-			Console.WriteLine("Text files with numbers in them aren't supported.");
-			Console.WriteLine("Type 'exit' to exit out of textpad.");
-			Console.Write(">>>: ");
+        bool boflag = true;
 
-			// [
-			try
-			{
+        while (boflag)
+        {
 
-				string input = Console.ReadLine();
+            Console.WriteLine("Type a filename. (It should be ending in a .txt)");
+            Console.WriteLine("Text files with numbers in them aren't supported.");
+            Console.WriteLine("Type 'exit' to exit out of textpad.");
+            Console.Write(">>>: ");
 
-				var createfile = File.Create(@"0:\" + input);
+            // [
+            try
+            {
 
-				// Pad supports only 2000 lines of text.
-				for (int index = 0; index < 2000; index += 1)
-				{
+                string input = Console.ReadLine();
 
-					Console.WriteLine("Type something into the text file.");
-					Console.WriteLine(">>>: ");
+                var createfile = File.Create(@"0:\" + input);
 
-					
-					string type_text = Console.ReadLine();
+                // Pad supports only 2000 lines of text.
+                for (int index = 0; index < 2000; index += 1)
+                {
 
-					if (type_text == "exit")
-					{
+                    Console.WriteLine("Type something into the text file.");
+                    Console.WriteLine(">>>: ");
 
-						boflag = false;
-						break;
 
-					}
+                    string type_text = Console.ReadLine();
 
-					else
-					{
+                    if (type_text == "exit")
+                    {
 
+                        boflag = false;
+                        break;
 
-						
+                    }
 
-						File.AppendAllText(@"0:\" + input, type_text.ToString() + Environment.NewLine);
+                    else
+                    {
 
 
 
-					}
 
-				}
-					
+                        File.AppendAllText(@"0:\" + input, type_text.ToString() + Environment.NewLine);
 
-			
 
-			}
 
-			catch (Exception e)
-			{
+                    }
 
-				Console.WriteLine(e.Message);
+                }
 
-			}
-			// ]
 
-		}
 
-	}
 
-	public static void textpad3()
-	{
+            }
 
-		do
-		{
+            catch (Exception e)
+            {
 
-			Console.WriteLine("Type in the filename you want to view AND type it in with the file extension like '.txt'");
-			Console.WriteLine("Type \"exit\" to exit out of Textpad.");
-			Console.Write("Input the filename you want to view: ");
+                Console.WriteLine(e.Message);
 
-			// [
-			try
-			{
+            }
+            // ]
 
-				string filename = Console.ReadLine();
+        }
 
-				if (filename == "exit")
-				{
+    }
 
-					Cmdman.Clear_Src();
-					break;
+    public static void textpad3()
+    {
 
-				}
+        do
+        {
 
-				else
-				{
+            Console.WriteLine("Type in the filename you want to view AND type it in with the file extension like '.txt'");
+            Console.WriteLine("Type \"exit\" to exit out of Textpad.");
+            Console.Write("Input the filename you want to view: ");
 
-					Console.Clear();
-					Console.WriteLine(File.ReadAllText(@"0:\" + filename));
+            // [
+            try
+            {
 
-				}
-				
-			}
+                string filename = Console.ReadLine();
 
-			catch (Exception e)
-			{
+                if (filename == "exit")
+                {
 
-				Console.Beep();
-				Console.Clear();
-				Console.WriteLine(e.ToString());
+                    Cmdman.Clear_Src();
+                    break;
 
-			}
-			// ]
+                }
 
+                else
+                {
 
-		} while (true);
+                    Console.Clear();
+                    Console.WriteLine(File.ReadAllText(@"0:\" + filename));
 
-	}
+                }
+
+            }
+
+            catch (Exception e)
+            {
+
+                Console.Beep();
+                Console.Clear();
+                Console.WriteLine(e.ToString());
+
+            }
+            // ]
+
+
+        } while (true);
+
+    }
 
 }
