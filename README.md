@@ -3,20 +3,16 @@
 ![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
 
-- Message of the day: (12/26/2022)
+- Message of the day: (1/1/2023)
 
-Merry christmas everybody! Ho ho ho!
-Yeah sorry I was planning on releasing this yesterday (christmas)
-but I was facing a slight issue. And because of that you have to install
-EchOS differently now. I just find out all my previous releases of EchOS
-don't work and for that I am so sorry! I never checked the releases out
-until now. But now it should work because in order to run EchOS you have
-to build the source code yourself which as long as you have Cosmos installed
-it should be simple to run. If you need help to run EchOS I have a new
-Documentation that should help with that. Check out the install section
-of this readme. But yeah! Ten new features it made EchOS look different.
-But yeah I hope you enjoy this new update! And have a merry christmas 
-to you all!
+Wait what? I thought it was 2022.. Happy new year!
+New year new me they say! But this time its going to be new year new OS!
+I'm going to continue the scratch project. EchOS will be migrating from cosmos
+and into its own OS finally for the first time! I will not be sure on how long
+this is gonna take but I will do everything I can to make sure it gets finished
+as fast as I can :) Wow I still can't believe 2023 is here. I heard fireworks
+all day. Well this year is better than last year. 2022 was pretty crazy but lets
+make 2023 a great year for EchOS! Cya :)
 
 - About
 
