@@ -3,16 +3,15 @@
 ![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
 
-- Message of the day: (1/1/2023)
+- Message of the day: (1/4/2023)
 
-Wait what? I thought it was 2022.. Happy new year!
-New year new me they say! But this time its going to be new year new OS!
-I'm going to continue the scratch project. EchOS will be migrating from cosmos
-and into its own OS finally for the first time! I will not be sure on how long
-this is gonna take but I will do everything I can to make sure it gets finished
-as fast as I can :) Wow I still can't believe 2023 is here. I heard fireworks
-all day. Well this year is better than last year. 2022 was pretty crazy but lets
-make 2023 a great year for EchOS! Cya :)
+Hey everyone! Well this year seems to be doing fine.
+I hope you guys are all doing good! Just to let you guys know
+EchOS from scratch will NOT have a eta or a estimated time of arrival
+to when the update will come out. I have decided that because of how
+big of an update this is it wouldn't make sense to try and put pressure
+on making to the deadline :) it will be done when its done. Anyways
+thats all I had to say thank you to those who have downloaded EchOS!
 
 - About
 
