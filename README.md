@@ -3,15 +3,15 @@
 ![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
 
-- Message of the day: (1/4/2023)
+- Message of the day: (1/14/2023)
 
-Hey everyone! Well this year seems to be doing fine.
-I hope you guys are all doing good! Just to let you guys know
-EchOS from scratch will NOT have a eta or a estimated time of arrival
-to when the update will come out. I have decided that because of how
-big of an update this is it wouldn't make sense to try and put pressure
-on making to the deadline :) it will be done when its done. Anyways
-thats all I had to say thank you to those who have downloaded EchOS!
+Hey everyone! I really hope 2023 is going well because
+I'm gonna bring some news to the table. I'm putting EchOS on hiatus.
+I've been burntout recently and I really just want to take a break.
+"When will development start again?" When I feel like it. I understand
+its taking a Lot of time to release our huge 1.6 update but again theres
+no eta. Its coming when its coming. Anyways I hope 2023 continues to go well
+if it already is. cya and happy new year!
 
 - About
 
