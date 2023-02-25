@@ -1,5 +1,9 @@
 # EchOS
 
+- About
+
+EchOS Is an Flexable DOS operating system written in Java!
+
 ![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
 
@@ -22,10 +26,6 @@ matically starts up the Java virtual machine (JVM) then starts
 up EchOS. As simple as that! Because this is a much more stable
 option compared to cosmos you can expect better support and
 better features to come out. I hope you guys enjoy this release :)
-
-- About
-
-EchOS Is an Flexable DOS operating system written in Java!
 
 How to install:
 
