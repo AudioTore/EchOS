@@ -27,6 +27,7 @@ Update (1/26/2023):
 
 Q&A:
 The Q&A just got updated go check it out!
+https://github.com/audiotore482/Q-AEch
 
 - VERSION:
 EchOS 1.6
