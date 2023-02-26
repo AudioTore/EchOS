@@ -25,6 +25,7 @@ Check out our documentation https://github.com/audiotore482/EchOS-Documentation
 
 Update (1/26/2023):
 
+Q&A:
 The Q&A just got updated go check it out!
 
 - VERSION:
@@ -32,10 +33,6 @@ EchOS 1.6
 
 - License:
 GNU GENERAL PUBLIC LICENSE v2
-
-FAQ
-Great news! You can find a list of questions and answers at this repos:
-[](https://github.com/audiotore482/Q-AEch)](https://github.com/audiotore482/Q-AEch)
 
 
 Also big thanks to Richard5656 Go check him out!
