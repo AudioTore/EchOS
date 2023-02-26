@@ -21,7 +21,9 @@ How to install:
 
 Check out our documentation https://github.com/audiotore482/EchOS-Documentation
 
+Update (1/26/2023):
 
+The Q&A just got updated go check it out!
 
 - VERSION:
 EchOS 1.6
