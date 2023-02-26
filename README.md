@@ -5,25 +5,17 @@ kinda like MSDOS but if it was still in support.
 ![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
 
-- Message of the day: (1/25/2023)
+- Message of the day: (1/26/2023)
 
-Hey guy! So im back from my break and I been working on EchOS recently.
-The new 1.6 update just came out! and as you can see if you download it
-there are huge changes to everything! So the way EchOS is gonna work is 
-now a lot different. We have moved from Cosmos and onto a more
-stable and reliable alternative. All the source code has been
-shifted to Java and theirs a resson for that. First of EchOS
-is now cross platforum? What does that mean? That means you can
-either run EchOS on top of your hostOS by running a file or 
-downloading the bootable file that also comes with the release
-and boot it in a virtual machine. EchOS now supports almost ALL
-hardware including support for (but not limited to) virtualbox,
-qemu, vmware, and even bare metal! How is it possible that EchOS
-can run on top of java? Well by using a base OS (Debian) it auto-
-matically starts up the Java virtual machine (JVM) then starts
-up EchOS. As simple as that! Because this is a much more stable
-option compared to cosmos you can expect better support and
-better features to come out. I hope you guys enjoy this release :)
+Hello, World! I updated the documentation yesterday so if you need
+help installing EchOS its got your back :) The documentation also comes
+with the released zip file. First off I just want to say thank for ALL
+that has come to check out my project. I took a look at the insights
+and there was nearly an explosion in their. Thanks for everyone 
+who forked and starred my project glad to have some traction on
+my repos :) If you guys want feel free to leave some feature suggestions
+on the issues tab. I may add some of them but as linus torvalds once said
+"can't guarantee it" Anyways cya :)
 
 How to install:
 
