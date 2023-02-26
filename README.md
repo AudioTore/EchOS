@@ -1,8 +1,9 @@
 # EchOS
+[image](https://user-images.githubusercontent.com/117720256/221413940-da9d463f-2344-40e0-b4f2-b45f9ad231ce.png)
+
 EchOS Is an Flexable DOS operating system written in Java!
 kinda like MSDOS but if it was still in support.
 
-![image](https://user-images.githubusercontent.com/95601200/182506219-8fd30d30-9055-4be2-85a0-c74c35034082.png)
 
 
 - Message of the day: (1/26/2023)
