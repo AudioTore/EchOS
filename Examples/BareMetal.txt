@@ -1,0 +1,4 @@
+To run on bare metal please make sure you have legacy mode on in the 
+bios settings.
+
+Burn the ISO to an CDROM or an USB Stick. USB stick should be (at least 16 GB's)
