@@ -9,15 +9,10 @@ kinda like MSDOS but if it was still in support.
 
 - Message of the day: (1/26/2023)
 
-Hello, World! I updated the documentation yesterday so if you need
-help installing EchOS its got your back :) The documentation also comes
-with the released zip file. First off I just want to say thank for ALL
-that has come to check out my project. I took a look at the insights
-and there was nearly an explosion in their. Thanks for everyone 
-who forked and starred my project glad to have some traction on
-my repos :) If you guys want feel free to leave some feature suggestions
-on the issues tab. I may add some of them but as linus torvalds once said
-"can't guarantee it" Anyways cya :)
+Hello everyone again! I decided to move updates
+from once a month to once a week! Judging by the amount of
+traction I will do that just to keep you guys intrested
+and excited :) Anyways thats all im gonna say.
 
 How to install:
 
