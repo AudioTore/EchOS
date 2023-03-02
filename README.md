@@ -7,12 +7,13 @@ kinda like MSDOS but if it was still in support.
 
 
 
-- Message of the day: (1/26/2023)
+- Message of the day: (2/2/2023)
 
-Hello everyone again! I decided to move updates
-from once a month to once a week! Judging by the amount of
-traction I will do that just to keep you guys intrested
-and excited :) Anyways thats all im gonna say.
+Hey there everyone! New update just released.
+Not a big update only a few minor changes
+but its a update any how!. Just wanna say
+thank you to all who have checked out my
+project and starred. it means a lot to me :)
 
 How to install:
 
@@ -25,7 +26,7 @@ The Q&A just got updated go check it out!
 https://github.com/audiotore482/Q-AEch
 
 - VERSION:
-EchOS 1.6
+EchOS 1.7
 
 - License:
 GNU GENERAL PUBLIC LICENSE v2
