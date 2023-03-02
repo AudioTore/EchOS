@@ -33,11 +33,10 @@ public class Cmdman {
 			    System.out.println("System.Shutdown(); - Shuts the OS Down. (Please use this to properly shutdown the System.)");
 			    System.out.println("System.Reboot(); - Reboots the OS.");
 			    System.out.println("Open.Calculator(); - Opens the systems calculator.");
-			    System.out.println("BackgroundColor.Change(); - Changes the terminals background color.");
 			    System.out.println("System.About(); - Tells more information about the OS");
 			    System.out.println("CMD.Clear(); - Clears the console.");
 			    System.out.println("Execute.Ticktacktoe();");
-			    System.out.println("Orlov [file] - Use the orlov language to build apps. mov ah, \"Hello!\"");
+			    System.out.println("Orlov [file] - NOT Implemented yet.");
 			    System.out.println("echo [string] - Echos anything back to you.");
 			    System.out.println("================================================================================");
 		}

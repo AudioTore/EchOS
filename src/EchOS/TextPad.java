@@ -21,9 +21,14 @@ public class TextPad {
 			if (textpad.equals("1")) {
 				System.out.print("Type in a filename: ");
 				String filecreate = scan.nextLine();
-				File file = new File(filecreate);
-				file_towrite = filecreate;
-				write();
+				if (filecreate.contains("();")) {
+					System.out.println("Nice try! You can't create files with \"();\"");
+				}
+				else {
+					File file = new File(filecreate);
+					file_towrite = filecreate;
+					write();
+				}
 			}
 			
 			else if (textpad.equals("2")) {

@@ -3,6 +3,8 @@ package EchOS;
 import java.io.IOException;
 import java.util.Scanner;
 
+import EchOS.Orlov.Lexer;
+
 public class Kernel {
 	
 	// System objects.
@@ -12,7 +14,8 @@ public class Kernel {
 	public static String directorycreate;
 	public static String directorydelete;
 	public static String fileread;
-	
+	public static String Orlov;
+	public static String cdinto;
 	
 	public static void main(String[] args) {
 		try {
@@ -102,16 +105,8 @@ public class Kernel {
 				}
 			}
 			
-			else if (input.startsWith("Orlov")) {
-				System.out.println("Not implemented yet!");
-			}
-			
 			else if (input.equals("CMD.Clear();")) {
 				Cmdman.clear();
-			}
-			
-			else if (input.equals("BackgroundColor.Change();")) {
-				System.out.println("Not implemented yet!");
 			}
 			
 			else if (input.equals("System.About();")) {
@@ -151,6 +146,24 @@ public class Kernel {
 					}
 					catch (Exception err) {
 						System.out.println("[Disk]: Problem while reading file!");
+					}
+				}
+				else {
+					System.out.println("ERROR: Missing a \"();\" at the end...");
+				}
+			}
+			
+			
+			else if (input.startsWith("Orlov")) {
+				if (input.endsWith("();")) {
+					String toremove = input.replace("Orlov ", "");
+					String toremove1 = toremove.replace("();", "");
+					Orlov = toremove1;
+					try {
+						System.out.println("Not implemented yet! Coming soon..");
+					}
+					catch (Exception err) {
+						System.out.println(err);
 					}
 				}
 				else {
