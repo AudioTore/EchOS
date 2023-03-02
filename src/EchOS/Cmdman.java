@@ -13,7 +13,7 @@ public class Cmdman {
 			System.out.flush();
 			System.out.println("===============================================================================");
 			System.out.println("||###########################################################################||");
-			System.out.println("||                                 EchOS 1.6                                 ||");
+			System.out.println("||                                 EchOS 1.7                                 ||");
 			System.out.println("||###########################################################################||");
 			System.out.println("===============================================================================");
 		}
@@ -42,7 +42,7 @@ public class Cmdman {
 		}
 		
 		public static void About() {
-			System.out.println("[EchOS] 1.6");
+			System.out.println("[EchOS] 1.7");
 			System.out.println("Developer: audiotore341");
 			System.out.println("Languages: Java");
 		}
