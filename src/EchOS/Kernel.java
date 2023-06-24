@@ -3,8 +3,6 @@ package EchOS;
 import java.io.IOException;
 import java.util.Scanner;
 
-import EchOS.Orlov.Lexer;
-
 public class Kernel {
 	
 	// System objects.
@@ -41,7 +39,7 @@ public class Kernel {
 			System.out.println("EchOS has successfully booted!");
 			Thread.sleep(2000);
 			System.out.print("\033[H\033[2J");  // "\033[H\033[2J" Clears the screen
-			System.out.flush();  
+			System.out.flush();
 				
 				System.out.println("===============================================================================");
 				System.out.println("||###########################################################################||");
