@@ -2,8 +2,7 @@
 ![182506219-8fd30d30-9055-4be2-85a0-c74c35034082_preview_rev_1](https://user-images.githubusercontent.com/117720256/221413973-5ecb0e46-a26b-4cdf-80a1-d2fd4bb36df1.png)
 
 
-EchOS Is an Flexable DOS operating system Simulator written in Java!
-kinda like MSDOS but if it was still in support.
+EchOS Is an Flexable DOS operating system Simulator.
 
 
 
