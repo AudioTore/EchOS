@@ -13,8 +13,6 @@ https://echosoperatingsystem.godaddysites.com/
 
 Check out our documentation https://github.com/audiotore482/EchOS-Documentation
 
-Update (1/26/2023):
-
 ## VERSION:
 EchOS 1.7
 
